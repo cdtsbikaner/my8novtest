@@ -1,8 +1,8 @@
 FROM rockylinux:9.3.20231119
 
-MAINTAINER "ekamjeet@gmail.com"
+MAINTAINER "ekamjeetsingh@gmail.com"
 
-RUN  dnf install -y vim java-17-openjdk java-17-openjdk-devel 
+RUN  dnf install -y java-17-openjdk java-17-openjdk-devel 
 
 COPY Dockerfile  /root/
 
