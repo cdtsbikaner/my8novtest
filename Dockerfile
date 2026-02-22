@@ -1,11 +1,8 @@
 FROM rockylinux:9.3.20231119
 
-MAINTAINER "harman@gmail.com"
+MAINTAINER "ekamjeet@gmail.com"
 
-#RUN sed -i  's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*  &&  \
-#    sed -i  's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g'  /etc/yum.repos.d/CentOS-*
-
-RUN  dnf install -y java-17-openjdk java-17-openjdk-devel 
+RUN  dnf install -y vim java-17-openjdk java-17-openjdk-devel 
 
 COPY Dockerfile  /root/
 
